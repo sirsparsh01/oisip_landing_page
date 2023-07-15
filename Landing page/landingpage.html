@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oasis Infobyte Landing Page</title>
+  <link rel="stylesheet" type="text/css" href="landingpage.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+
+  <style>
+    
+  </style>
+</head>
+<body>
+  
+
+  <main>
+    <section id="hero">
+      <h1>Welcome to our Website For Oasis Infobyte </h1>
+      <p>Discover the Best Internship Throughout The Page</p>
+      <a href="#contact" class="btn">Contact Us</a>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <img src="https://shorturl.at/rtxD2" alt="Oasis Infobyte" class="about-image">
+      <p class="about-description"><strong>Oasis Infobyte</strong> is a leading technology company that has established itself as a key player in the global information technology industry. With a strong focus on innovation and cutting-edge solutions, Oasis Infobyte has consistently delivered high-quality services to its clients since its inception.</p>
+      
+      <p class="about-description">At Oasis Infobyte, the core philosophy revolves around harnessing the power of technology to transform businesses and drive digital transformation. The company offers a comprehensive range of services, including software development, IT consulting, data analytics, cybersecurity, and cloud computing solutions. These offerings cater to a diverse clientele, spanning various industries such as finance, healthcare, manufacturing, and telecommunications.</p>
+      
+    </section>
+    
+    <section id="services">
+      <h2>Our Services</h2>
+      <img src="https://denimmarketing.com/wp-content/uploads/2019/06/Internships-300x188@2x.png" alt="Oasis Infobyte" class="services-image">
+      <div class="services-container">
+        <ul>
+          <li>Internship</li>
+          <p class="services-description"><b>Software Development Internships:</b> Oasis Infobyte offers internships for students or recent graduates interested in software development. Interns work alongside experienced developers, contributing to real-world projects and gaining hands-on experience in software design, coding, testing, and debugging.</p>
+          <p class="services-description"><b>Data Analytics Internships:</b> Oasis Infobyte provides internships in the field of data analytics, allowing interns to work with data scientists and analysts on projects related to data mining, data visualization, statistical analysis, and predictive modeling. This internship helps interns understand data-driven decision-making and develop skills in data analysis tools and techniques.</p>
+          <p class="services-description"><b>Cybersecurity Internships:</b> Oasis Infobyte offers internships focused on cybersecurity, providing interns with an opportunity to work with security professionals. Interns assist in tasks such as vulnerability assessments, security audits, security incident response, and researching emerging threats and technologies. This internship helps interns gain practical knowledge in cybersecurity practices and technologies.</p>
+          
+          <p class="services-description"><b>Web and Mobile Development Internships:</b> Oasis Infobyte offers internships focused on web and mobile development. Interns gain experience in designing and developing responsive websites and mobile applications. They work with development teams, learning about front-end and back-end technologies, coding standards, and best practices in web and mobile development.</p>
+          <p class="services-description"><b>Cloud Computing Internships:</b> Oasis Infobyte provides internships related to cloud computing, allowing interns to work on cloud-based projects and learn about cloud platforms such as AWS, Azure, or Google Cloud. Interns may assist in cloud architecture design, migration projects, and cloud infrastructure management, gaining practical experience in cloud technologies.</p>
+          <p class="services-description"><b>IT Consulting Internships:</b> Oasis Infobyte provides internships in IT consulting, allowing interns to work closely with experienced consultants. Interns assist in conducting technology assessments, researching industry trends, developing client recommendations, and participating in client engagements. This internship helps interns understand the consulting process and develop problem-solving and client management skills.</p>
+          
+        </ul>
+      </div>
+    </section>
+    
+    <section id="we-do">
+      <h2>What Do We Do</h2>
+      <ul>
+        <p class="we-do-description"><b>Software Development:</b> Oasis Infobyte offers custom software development services, building tailored solutions to meet the specific needs of businesses. This includes web and mobile application development, enterprise software development, and application integration. </p>
+        <p class="we-do-description"> <b>IT Consulting:</b> Oasis Infobyte provides expert IT consulting services, helping businesses assess their technology needs, develop IT strategies, and optimize their IT infrastructure. The company offers guidance on technology selection, implementation, and best practices.</p>
+        <p class="we-do-description"><b>Data Analytics:</b> Oasis Infobyte helps businesses leverage the power of data through advanced analytics. They offer services such as data mining, predictive analytics, and business intelligence to extract valuable insights from large datasets and enable data-driven decision-making. </p>
+        <p class="we-do-description"><b>Cybersecurity:</b> Oasis Infobyte specializes in cybersecurity services, helping businesses protect their digital assets from threats and vulnerabilities. They offer services like vulnerability assessments, penetration testing, network security, and incident response to ensure the security of critical systems and data. </p>
+      </ul>
+    </section>
+
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Oasis Infobyte. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Add custom JavaScript code here
+    window.addEventListener("scroll", function() {
+      var sections = document.querySelectorAll("section");
+      var windowHeight = window.innerHeight;
+  
+      sections.forEach(function(section) {
+        var sectionTop = section.getBoundingClientRect().top;
+  
+        if (sectionTop < windowHeight * 0.8) {
+          section.classList.add("fade-in");
+        } else {
+          section.classList.remove("fade-in");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
